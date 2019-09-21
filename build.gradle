@@ -1,0 +1,24 @@
+plugins {
+    id "groovy"
+    id "idea"
+}
+group 'com.huantt'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:2.5.6'
+    //Logging
+    implementation 'org.slf4j:slf4j-simple:1.7.28'
+    implementation 'org.slf4j:slf4j-api:1.7.28'
+
+    //Vert-web-client
+    implementation 'io.vertx:vertx-web-client:3.8.1'
+    //OkHttp
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+}
